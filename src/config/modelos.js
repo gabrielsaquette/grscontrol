@@ -1,0 +1,48 @@
+
+export const MODELOS_RAPIDOS = [
+  {
+    id: 'netflix',
+    rotulo: 'Netflix',
+    tipo: '1',
+    categoria: 6,
+    setor: 3,
+    valor: '49.90',
+    descricao: 'Netflix - Assinatura mensal',
+  },
+  {
+    id: 'spotify',
+    rotulo: 'Spotify',
+    tipo: '1',
+    categoria: 6,
+    setor: 3,
+    valor: '21.90',
+    descricao: 'Spotify - Assinatura mensal',
+  },
+  {
+    id: 'guardar-dinheiro',
+    rotulo: 'Reserva Emergencial',
+    tipo: '1',
+    categoria: 10,
+    setor: 5,
+    valor: '50.00',
+    descricao: 'Reserva Emergencial',
+  },
+  {
+    id: 'internet',
+    rotulo: 'Internet',
+    tipo: '1',
+    categoria: 8,
+    setor: 4,
+    valor: '99.90',
+    descricao: 'Internet - Mensalidade',
+  },
+  {
+    id: 'academia',
+    rotulo: 'Desconto Academia',
+    tipo: '1',
+    categoria: 4,
+    setor: 8,
+    valor: '80.00',
+    descricao: 'Academia - Mensalidade',
+  },
+];

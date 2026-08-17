@@ -1,0 +1,31 @@
+.popup-fundo {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 16px;
+}
+
+.popup-caixa {
+  background: var(--cor-superficie);
+  border-radius: var(--raio);
+  padding: 20px;
+  width: 100%;
+  max-width: 280px;
+}
+
+.popup-titulo {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.popup-acoes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 16px;
+}

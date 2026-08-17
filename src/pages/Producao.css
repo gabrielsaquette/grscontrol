@@ -1,0 +1,154 @@
+.admin-conteudo {
+    padding: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.admin-acoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.admin-secao-titulo {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.tabela-wrapper {
+    overflow-x: auto;
+    border: 1px solid var(--cor-borda, #ddd);
+    border-radius: var(--raio, 6px);
+}
+
+.tabela-admin {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--cor-superficie, white);
+}
+
+.tabela-admin th,
+.tabela-admin td {
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 13px;
+    border-bottom: 1px solid var(--cor-borda, #ddd);
+    border-right: 1px solid var(--cor-borda, #ddd);
+    white-space: nowrap;
+}
+
+.tabela-admin th:last-child,
+.tabela-admin td:last-child {
+    border-right: none;
+}
+
+.tabela-admin th {
+    background: var(--cor-fundo, #f5f5f5);
+    color: var(--cor-texto-suave, #666);
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.tabela-admin tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.tabela-admin tbody tr:nth-child(even) {
+    background: var(--cor-fundo, #f9f9f9);
+}
+
+.tabela-admin tbody tr:hover {
+    background: #eef1ee;
+}
+
+.admin-link-tela {
+    color: #1C1F26;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.admin-link-tela:hover {
+    text-decoration: underline;
+}
+
+.admin-link-coluna {
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.admin-link-code {
+    background: #f5f5f5;
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: #333;
+    font-size: 12px;
+}
+
+.botao-acessar {
+    display: inline-block;
+    background-color: #21603F;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.botao-acessar:hover {
+    background-color: #1565c0;
+}
+
+.admin-info {
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+    padding: 12px 16px;
+    background: #f5f5f5;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.admin-info-item {
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.admin-info-label {
+    color: #666;
+}
+
+.admin-info-valor {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .admin-conteudo {
+        padding: 16px;
+    }
+
+    .tabela-admin th,
+    .tabela-admin td {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .admin-link-code {
+        font-size: 10px;
+        padding: 2px 6px;
+    }
+
+    .botao-acessar {
+        padding: 4px 8px;
+        font-size: 11px;
+    }
+}

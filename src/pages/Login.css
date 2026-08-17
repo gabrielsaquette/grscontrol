@@ -1,0 +1,87 @@
+.login-pagina {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  position: relative;
+}
+
+.login-cartao {
+  width: 100%;
+  max-width: 360px;
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  padding: 32px 28px;
+}
+
+.login-titulo {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.login-subtitulo {
+  color: var(--cor-texto-suave);
+  font-size: 14px;
+  margin-top: 4px;
+  margin-bottom: 24px;
+}
+
+.login-rotulo {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  margin-top: 14px;
+}
+
+.login-campo {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.login-campo:focus {
+  border-color: var(--cor-acento);
+}
+
+.login-erro {
+  color: var(--cor-erro);
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.login-botao {
+  width: 100%;
+  margin-top: 24px;
+  padding: 11px;
+  background-color: var(--cor-acento);
+  color: #ffffff;
+  border-radius: var(--raio);
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.15s ease;
+}
+
+.login-botao:hover:not(:disabled) {
+  background-color: var(--cor-acento-hover);
+}
+
+.login-botao:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.login-marca-dagua {
+  margin-top: 20px;
+  font-size: 12px;
+  color: var(--cor-texto-suave);
+  opacity: 0.6;
+  letter-spacing: 0.3px;
+}
