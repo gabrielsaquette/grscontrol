@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../../../context/AuthContext'; // Adicione esta importação
+import { useAuth } from '../../../context/AuthContext';
 import { SETORES, MENUS } from '../../../config/opcoes';
 import Layout from '../../../components/Layout';
 import './NovoLancamento.css';
 
 export default function CadastrarUsuario() {
     const navigate = useNavigate();
-    const { usuario } = useAuth(); // Adicione esta linha para obter o usuário logado
+    const { usuario } = useAuth();
     const [setor, setSetor] = useState('');
 
     const [formData, setFormData] = useState({
@@ -49,7 +49,7 @@ export default function CadastrarUsuario() {
 
         try {
             console.log('Dados do usuário:', {
-                idUsuario: usuario.idUsuario, // Adicione o idUsuario aqui
+                idUsuario: usuario.idUsuario,
                 nome: formData.nome,
                 email: formData.email,
                 senha: formData.senha,
@@ -57,9 +57,6 @@ export default function CadastrarUsuario() {
                 setor: formData.setor,
                 status: formData.status
             });
-
-            // Aqui você deve chamar a função da API que faz o cadastro
-            // Exemplo: await cadastrarUsuario(usuario.idUsuario, formData);
 
             await new Promise(resolve => setTimeout(resolve, 1000));
 
