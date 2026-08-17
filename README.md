@@ -6,7 +6,7 @@ GRSControl é um ERP empresarial desenvolvido com React (Vite), PHP e MySQL. O s
 
 ## Demonstração
 
-https://github.com/gabrielsaquette/grscontrol/intro.mp4
+https://youtu.be/E_t17DXiszE
 
 ## Segurança
 
